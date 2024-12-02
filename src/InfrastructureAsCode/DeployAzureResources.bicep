@@ -2,7 +2,7 @@
 param location string = resourceGroup().location
 
 @description('Password for the SQL Server admin user. PLEASE CHANGE THIS BEFORE DEPLOYMENT!')
-param sqlAdminPassword string = 'g@G9@2nD7C1BP%uh'
+param sqlAdminPassword string = 'Lb9*5y3Aeuv0UjIw'
 
 @description('Model deployments for OpenAI')
 param deployments array = [
@@ -44,7 +44,7 @@ var functionAppName = '${uniqueString(resourceGroup().id)}-cosu-fn'
 var functionAppServicePlanName = '${uniqueString(resourceGroup().id)}-cosu-fn-asp'
 var logAnalyticsName = '${uniqueString(resourceGroup().id)}-cosu-la'
 var appInsightsName = '${uniqueString(resourceGroup().id)}-cosu-ai'
-var webAppSku = 'S1'
+var webAppSku = 'B2'
 var registryName = '${uniqueString(resourceGroup().id)}cosureg'
 var registrySku = 'Standard'
 var sqlServerName = '${uniqueString(resourceGroup().id)}-sqlserver'
